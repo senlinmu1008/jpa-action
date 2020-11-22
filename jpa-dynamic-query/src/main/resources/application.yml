@@ -1,0 +1,19 @@
+server:
+  port: 40200
+
+spring:
+  application:
+    name: jpa-dynamic-query
+  datasource:
+    url: jdbc:mysql://148.70.153.63:3306/ttms?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: MYSQL
+    properties:
+      hibernate:
+        format_sql: true
