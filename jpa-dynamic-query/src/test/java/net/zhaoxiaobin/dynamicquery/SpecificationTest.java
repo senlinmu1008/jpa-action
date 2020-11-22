@@ -25,7 +25,7 @@ public class SpecificationTest {
 
     @Test
     public void testSpecification() {
-        List<Actor> actorList = specificationService.findBySpecification(500L, 41, 0, 10);
+        List<Actor> actorList = specificationService.findBySpecification(1L, null, 0, 10);
         log.info(JSONUtil.toJsonPrettyStr(actorList));
     }
 }

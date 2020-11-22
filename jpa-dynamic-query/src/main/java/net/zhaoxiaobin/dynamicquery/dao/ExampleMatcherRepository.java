@@ -8,4 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @date 2020/11/17 10:33 下午
  */
 public interface ExampleMatcherRepository extends JpaRepository<Actor, Long> {
+
 }

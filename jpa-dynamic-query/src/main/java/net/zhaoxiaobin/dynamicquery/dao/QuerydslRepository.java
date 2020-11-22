@@ -9,4 +9,5 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
  * @date 2020/11/18 8:18 下午
  */
 public interface QuerydslRepository extends JpaRepository<Actor, Long>, QuerydslPredicateExecutor<Actor> {
+
 }
