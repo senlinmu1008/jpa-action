@@ -10,6 +10,7 @@
     <modules>
         <module>jpa-basic</module>
         <module>jpa-dynamic-query</module>
+        <module>jpa-multi-datasource</module>
     </modules>
 
     <parent>
