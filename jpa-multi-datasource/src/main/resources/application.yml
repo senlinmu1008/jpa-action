@@ -1,1 +1,32 @@
+server:
+  port: 40300
 
+spring:
+  application:
+    name: jpa-multi-datasource
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://148.70.153.63:3306/ttms?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initialSize: 5
+      maxActive: 50
+      minIdle: 0
+      maxWait: 60000
+      useUnfairLock: true # 禁用公平锁
+    secondary:
+      jdbc-url: jdbc:mysql://148.70.153.63:3306/ttms?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+      username: root
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initialSize: 3
+      maxActive: 10
+      minIdle: 0
+      maxWait: 60000
+      useUnfairLock: true # 禁用公平锁
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: MYSQL
